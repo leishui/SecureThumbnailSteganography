@@ -1,10 +1,11 @@
-package tools
+package cc.leishui.sts.tools
 
-import COMPRESS_FILE_ERROR
-import COMPRESS_IMAGE_ERROR
-import DECOMPRESS_FILE_ERROR
-import StsConfig
-import MERGE_FILE_ERROR
+import cc.leishui.sts.sts.StsConfig
+import cc.leishui.sts.tools.CommandTool.executeCommand
+import cc.leishui.sts.tools.Values.COMPRESS_FILE_ERROR
+import cc.leishui.sts.tools.Values.COMPRESS_IMAGE_ERROR
+import cc.leishui.sts.tools.Values.DECOMPRESS_FILE_ERROR
+import cc.leishui.sts.tools.Values.MERGE_FILE_ERROR
 import java.awt.RenderingHints
 import java.awt.image.BufferedImage
 import java.io.File

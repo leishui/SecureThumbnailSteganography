@@ -1,5 +1,5 @@
 import org.junit.Test
-import tools.executeCommand
+import cc.leishui.sts.tools.CommandTool.executeCommand
 
 class CommandToolTest {
     @Test

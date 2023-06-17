@@ -1,3 +1,5 @@
+package cc.leishui.sts.sts
+
 class StsConfig(
     // 源目录
     val sourceDir: String = "",
