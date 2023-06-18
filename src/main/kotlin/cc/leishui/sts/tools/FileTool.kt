@@ -112,7 +112,7 @@ class FileTool(
     }
 
     /**
-     * 对[[StsConfig.sourceDir] 目录下的后缀与配置[StsConfig.extensions] 相符的文件进行扫描，
+     * 对[[StsConfig.sourceDir] 目录下的扩展与配置[StsConfig.extensions] 相符的文件进行扫描，
      * 将结果保存到[queue]中并进行返回
      *
      * @return 扫描到的文件列表
@@ -123,7 +123,7 @@ class FileTool(
     }
 
     /**
-     * 从指定目录向下扫描后缀相符的文件，通过[StsConfig.isRecursive] 决定是否递归的扫描所有子目录
+     * 从指定目录向下扫描扩展相符的文件，通过[StsConfig.isRecursive] 决定是否递归的扫描所有子目录
      *
      * @param folder 扫描的起始目录
      */

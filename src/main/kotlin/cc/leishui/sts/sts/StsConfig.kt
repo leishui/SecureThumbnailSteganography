@@ -11,7 +11,7 @@ class StsConfig(
     val compressedSize: Int = 50,
     // 是否递归子目录
     val isRecursive: Boolean = false,
-    // 扫描后缀名
+    // 扫描扩展名
     val extensions: Array<String> = arrayOf("jpg", "png", "jpeg"),
     // 线程数
     val nThreads: Int = 1
@@ -23,25 +23,18 @@ class StsConfig(
      */
     fun toFormatJson(): String {
         return "{\n" +
-                "\t// 源目录      \n" +
                 "\t\"sourceDir\"     : \"$sourceDir\",\n" +
-                "\t// 目标目录    \n" +
                 "\t\"targetDir\"     : \"$targetDir\",\n" +
-                "\t// 密码        \n" +
                 "\t\"password\"      : \"$password\",\n" +
-                "\t// 图片缩放尺寸 \n" +
                 "\t\"compressedSize\": $compressedSize,\n" +
-                "\t// 是否递归子目录\n" +
                 "\t\"isRecursive\"   : $isRecursive,\n" +
-                "\t// 扫描后缀名   \n" +
                 "\t\"extensions\"    : ${stringExtensions()},\n" +
-                "\t// 线程数      \n" +
                 "\t\"nThreads\"      : $nThreads\n" +
                 "}"
     }
 
     /**
-     * 后缀名列表文本化
+     * 扩展名列表文本化
      */
     private fun stringExtensions(): String {
         val sb = StringBuffer()
