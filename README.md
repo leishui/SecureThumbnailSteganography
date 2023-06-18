@@ -21,7 +21,7 @@
 
 安装好7z并配置好环境变量
 
-从[release]()中下载`sts.jar`
+从[release](https://github.com/leishui/SecureThumbnailSteganography/releases/tag/v1.0)中下载`sts.jar`
 
 ### 配置：
 
